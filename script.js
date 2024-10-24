@@ -42,8 +42,9 @@ async function handleFetch() {
     const cartInput = document.getElementById("cartInput")
     
     cartInput.addEventListener("input",function(){
-        cartSubTotal.innerHTML = cartInput.value?subTotal.innerHTML*cartInput.value:subTotal.innerHTML*1
-        cartTotal.innerHTML = cartInput.value?subTotal.innerHTML*cartInput.value:subTotal.innerHTML*1
+        cartSubTotal.innerHTML = cartInput.value?price.innerHTML*cartInput.value:price.innerHTML*1
+        cartTotal.innerHTML = cartInput.value?price.innerHTML*cartInput.value:price.innerHTML*1
+        subTotal.innerHTML=cartInput.value?price.innerHTML*cartInput.value:price.innerHTML*1
     })
     // cart checkout button handle
     const buttonCheckOut = document.getElementById('buttonCheckOut')
