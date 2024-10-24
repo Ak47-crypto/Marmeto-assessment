@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Mermeto</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+
+
+    <div class="main">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="/assets/logo.svg" />
+                <h2>Marmeto</h2>
+            </div>
+            <div class="nav-links">
+                <h4>Home</h4>
+                <h4>Shope</h4>
+                <h4>About</h4>
+                <h4>Contact</h4>
+            </div>
+            <div class="nav-icons">
+                <i class="ri-search-line"></i>
+                <i class="ri-heart-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+                <i class="ri-menu-line nav-icons-menu"></i>
+            </div>
+        </nav>
+        <div class="hero">
+
+            <div class="hero-text">
+                <img src="/assets/logo.svg" />
+                <p>Cart</p>
+                <p>Home &#62; Cart</p>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="cart-item">
+                <table>
+                    <thead>
+                        
+                        <tr>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                        <tr id="cartItemOne">
+                            <td><img id="imgCart" src="" alt="Product Image"></td>
+                            <td id="title" data-label="Product" style="color: #9F9F9F;">
+                                <div class="skeleton-line"></div>
+                            </td>
+                            <td  data-label="Price" style="color: #9F9F9F;">Rs <span id="price">
+                                0
+                            </span></td>
+                            <td data-label="Quantity"><input id='cartInput' type="text" placeholder="1" value="1"></td>
+                            <td data-label="Subtotal">Rs <span id="subTotal">
+                                0
+                            </span></td>
+                            <td id="deleteCart" data-label="Action"><i class="ri-delete-bin-7-fill" style="color:#B88E2F;cursor: pointer;"></i></td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-total">
+                <p>Cart Total</p>
+                <div class="cart-total-subtotal">
+                    <p>Subtotal</p>
+                    <p>Rs <span id="cartSubTotal">0</span></p>
+                </div>
+                <div class="cart-total-total">
+                    <p>Total</p>
+                    <p>Rs <span id="cartTotal">0</span></p>
+                </div>
+                <button id="buttonCheckOut">Check Out</button>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div>
+                <img src="/assets/trophy.svg" alt="">
+                <p>High Quality <br><span>crafted from top materials</span></p>
+            </div>
+            <div>
+                <img src="/assets/guarantee.svg" alt="">
+                <p>Warrenty Protection<br><span>over 2 years</span></p>
+            </div>
+            <div>
+                <img src="/assets/shipping.svg" alt="">
+                <p>Free Shipping<br><span>over order 150 $</span></p>
+            </div>
+            <div>
+                <img src="/assets/customer-support.svg" alt="">
+                <p>24 / 7 Support<br><span>Dedicated support</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
