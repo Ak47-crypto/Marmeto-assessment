@@ -40,11 +40,10 @@ async function handleFetch() {
     });
     // cart input change handle
     const cartInput = document.getElementById("cartInput")
-    console.log(cartInput.innerHTML)
+    
     cartInput.addEventListener("input",function(){
         cartSubTotal.innerHTML = cartInput.value?subTotal.innerHTML*cartInput.value:subTotal.innerHTML*1
         cartTotal.innerHTML = cartInput.value?subTotal.innerHTML*cartInput.value:subTotal.innerHTML*1
-        console.log(cartInput.value)
     })
     // cart checkout button handle
     const buttonCheckOut = document.getElementById('buttonCheckOut')
